@@ -86,13 +86,13 @@
         <input type="text" id="alm2" name="alm2" required><br>
         
         <button type="submit">Predict</button>
-        {% if prediction %}
+        
+    </form>
+    {% if prediction %}
             <p>Prediction: {{ prediction }}</p>
             <p>Training Accuracy: {{ train_accuracy }}</p>
             <p>Testing Accuracy: {{ test_accuracy }}</p>
         {% endif %}
-    </form>
-
     
 </body>
 </html>
