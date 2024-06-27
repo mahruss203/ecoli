@@ -39,7 +39,7 @@ def home():
     return render_template('index.html')
 
 # Define a route for prediction
-@app.route('/predict', methods=['POST'])
+@app.route('/tes', methods=['POST'])
 def predict():
     if request.method == 'POST':
         # Get the input data from the form
