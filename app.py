@@ -65,4 +65,4 @@ def predict():
 
     return render_template('index.html', prediction=predicted_class, train_accuracy=train_accuracy, test_accuracy=test_accuracy)
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,use_reloader=False)
